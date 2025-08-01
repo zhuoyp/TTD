@@ -98,20 +98,20 @@ hands/
     ],
     "images": [
         {
-            "id": frame_number,
+            "id": "frame_number",
             "file_name": "P01_01_00001.jpg",
-            "height": h,
-            "width": w,
+            "height": "h",
+            "width": "w",
             "channel": 3
         }
     ],
     "annotations": [
         {
-            "id": annotation_id,
-            "image_id": frame_number,
-            "category_id": 0,  # 0=left, 1=right
-            "bbox": [x, y, w, h],  # COCO format (x,y top-left)
-            "area": w * h,
+            "id": "annotation_id",
+            "image_id": "frame_number",
+            "category_id": 0, 
+            "bbox": ["x", "y", "w", "h"],
+            "area": "w * h",
             "iscrowd": 0
         }
     ]
@@ -130,17 +130,14 @@ objects/
 │   ├── P01_01_00002.jpg  
 │   ├── ...  
 ├── labels/  
-│   ├── P01_01_00001.json  
-│   ├── P01_01_00002.json  
+│   ├── P01_01_00001.txt  
+│   ├── P01_01_00002.txt 
 │   ├── ...  
 ```  
 **Annotation Format (YOLO-style):**  
-- Each `.json` file contains:  
-  ```json
-  {
-      "object-class": 0,  # Class ID (0-11 for 12 tools)
-      "bbox": [x_center, y_center, width, height]  # Normalized [0,1]
-  }
+- Each `.txt` file contains:  
+  ```
+  <object-class> <x-center> <y-center> <width> <height>
   ```
 
 ---
@@ -166,11 +163,16 @@ vqa/
         "version": "1.0",
         "year": 2025
     },
+    "data_type" : "mscoco",
+    "license" : {
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "name": "CC BY-NC-SA 4.0"
+    },
     "questions": [
         {
-            "image_id": "P01_01_00001.jpg",
-            "question": "What tool is in the surgeon's right hand?",
-            "question_id": 1
+            "image_name": "P01_01_00001.jpg",
+            "question": "Is the patient bleeding?",
+            "question_id": 10100001001
         }
     ]
 }
@@ -179,12 +181,22 @@ vqa/
 **Answer Format (`annotations.json`):**  
 ```json
 {
+    "info": {
+        "description": "Trauma THOMPSON VQA dataset",
+        "version": "1.0",
+        "year": 2025
+    },
+    "data_type" : "mscoco",
+    "license" : {
+        "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "name": "CC BY-NC-SA 4.0"
+    },
     "annotations": [
         {
-            "question_id": 1,
-            "image_id": "P01_01_00001.jpg",
+            "question_id": 10100001001,
+            "image_name": "P01_01_00001.jpg",
             "answers": [
-                {"answer": "scalpel", "confidence": "high", "answer_id": 1}
+                {"answer": "Yes", "confidence": "high", "answer_id": 1}
             ]
         }
     ]
