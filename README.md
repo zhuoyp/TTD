@@ -1,21 +1,12 @@
-# The Trauma THOMPSON Dataset
+# Trauma THOMPSON Dataset
 
 ## How to Access the Dataset
 
 To ensure responsible use, access to the dataset is granted after agreeing to our terms of use.
 
-Fill out the Consent Form: Please complete the user consent form at the following [link](https://docs.google.com/forms/d/e/1FAIpQLSeWBzYkKBzAS5U1TwFMZDfauEgXvioega9-qtuXDbzJQ5glTQ/viewform?usp=dialog). 
+Please complete the user consent form at the following [link](https://docs.google.com/forms/d/e/1FAIpQLSeWBzYkKBzAS5U1TwFMZDfauEgXvioega9-qtuXDbzJQ5glTQ/viewform?usp=dialog). 
 
-Dataset Access Registration Form  (<- Replace with your actual Google Form link)
-
-Receive Access Links: Upon submission of the form, you will be automatically redirected to a page containing the download links for the dataset.
-
-Download the Data: The dataset is hosted on both Google Drive and Harvard Dataverse for reliable access.
-
-Google Drive: A private link will be provided after consent.
-
-Harvard Dataverse: For permanent and version-controlled access.
-
+Upon submission of the form, you will be automatically redirected to a page containing the download links for the dataset.
 
 ## 📦 Dataset Description
 
